@@ -10,7 +10,7 @@ def train():
     print("Melhores hiperparâmetros encontrados:")
     print(grid.best_params_)
 
-    return grid, X_test, y_test
+    return grid.best_estimator_, X_test, y_test
 
 if __name__ == "__main__":
     train()
